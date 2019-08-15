@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<title>Contact | Riuya uetake</title>
+<meta name="Description" content="Riuya uetakeのポートフォリオサイトです。 デジタルハリウッド by LIGで制作しました。">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="icon" href="../img/favicon/favicon.ico">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/contact.css">
+</head>
+<body class="fadeout">
+<div class="cursor"></div>
+<div class="follower"></div>
+<header id="header">
+    <div id="insort-color">
+        <navigation></navigation>
+    </div>
+</header>
+<main id="main">
+  <div class="ripples">
+    <div class="square mt75">
+        <a href="../index.html?count=2"><h2-catch val="contact"></h2-catch></a>
+        <span class="linebox"></span>
+        <p class="ritchtext">ポートフォリオサイト、転職活動について<br/>
+          お仕事のご相談等お気軽にお問合せください</p>
+    </div>
+<div class="mt75">
+  <form method="post" action="mail.php">
+    <div class="flexcontainer">
+      <div class="itemtop">
+        <dl class="items">
+          <dt><label class="label">お名前</label></dt>
+          <dd><input type="text" name="name" placeholder="例)山田太郎" class="inputs" required></dd>
+        </dl>
+      </div>
+        <dl class="itemmessage">
+          <dt><label class="label">メールアドレス</label></dt>
+          <dd><input type="email" name="email" placeholder="123456@abc.jp" class="inputs"></dd>
+        </dl>
+    </div>
+    <div class="itemlow">
+        <dl>
+          <dt><label class="label">メッセージ</label></dt>
+          <dd><textarea name="message" placeholder="ご要件をご記入ください。" class="inputstext" required></textarea></dd>
+        </dl>  
+      </div>
+    <div class="linkbtn">
+      <span>
+        <input type="submit" value="Confirm">
+     </span>
+    </div>
+  </form>
+</div>
+</div>
+</main>
+</body>
+<script src="https://unpkg.com/vue@2.6.10"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="../js/jquery.ripples-min.js"></script>
+<script src="../js/component.js"></script>
+<script src="../js/common.js"></script>
+</html>

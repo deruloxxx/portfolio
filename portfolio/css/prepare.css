@@ -1,0 +1,35 @@
+.maitcontents{
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    margin-top: 270px;
+}
+.waitword{
+    text-align: center;
+    font-size: 50px;
+    color: #fafafa;
+    letter-spacing: 8px;
+    line-height: 100px;
+    text-shadow: #e7e7e7 1px 2px 0,
+    #999 2px 4px 3px,
+    #ccc 6px 6px 9px;
+}
+@media screen and (max-width: 430px) { 
+
+    .maitcontents{
+        margin: 0 auto;
+        height: auto;
+        width: 100%;
+        margin-top: 250px;
+    }
+    .area{
+        padding: 5px;
+    }
+    .waitword{
+        letter-spacing: 3px;
+        line-height: 70px;
+        font-size: 30px;
+    }
+}

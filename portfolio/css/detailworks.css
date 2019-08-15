@@ -1,0 +1,44 @@
+#main{
+    box-sizing: border-box;
+    width: 100%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    background: transparent;
+    background-color: #f6f6f6;
+    
+}
+.mywork{
+    text-align: center;
+    padding: 20px;
+    border: solid  0.3px solid #bababa;
+}
+.contents{
+    text-align: left;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.sectionline{
+    border: solid 1px rgba(45, 43, 43, 0.3);
+    width: 100%;
+    height: auto;
+    margin-bottom: 45px;
+}
+.process{
+    padding-bottom: 20px; 
+}
+.subcontents{
+    padding-left: 24px;
+}
+.subtext{
+    padding: 8px; 
+    list-style-type: disc;
+    letter-spacing: 2px;
+}
+@media screen and (max-width:430px) {
+    .process{
+        text-align: center;
+        font-size: 15px;
+    }
+    }

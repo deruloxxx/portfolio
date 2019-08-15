@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Riuya uetake</title>
+    <meta name="description" content="Riuya uetakeのポートフォリオサイトです。 デジタルハリウッド by LIGで制作しました。">
+    <link rel="icon" href="../img/favicon/favicon.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/top.css">
+</head>
+<body class="fadeout">
+    <div id="loader-bg" class="fadeout">
+        <div id="loader">
+            <ul class="spinner">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>               
+    </div>
+    <div class="cursor"></div>
+        <div class="follower"></div>
+        <header id="header">
+                <canvas id="c"></canvas>
+            <div class="colorbox">
+                <navigation></navigation>
+            </div>
+        </header>
+    <!-- <p class="sample">スクロール位置：<span id="scroll-amount">0px</span></p> -->
+        <main id="main">
+            <section id="home">
+            <div class="mainvisual"> 
+                    <home-text></home-text>
+                    <h1-title></h1-title>
+                    <div class="ripples"><h2 class="lastname tlt" data-in-effect="flipInY" data-in-shuffle="true">Uetake.</h2></div>
+                    <p class="catchtext"><span class="letters">人と人の想いを繋ぐお手伝い。</span></p>
+                    <mouse-scroll-line></mouse-scroll-line>
+                </div>
+            </section>
+            <section id="concept" class="ripples">
+                    <div class="square">
+                        <h2-catch val="concept"></h2-catch>
+                        <span class="linebox01"></span>
+                        <p class="ritchtext">魅了しながら、気持ちを運ぶ</p>
+                    </div>
+                    <div id="imgslide">
+                        <div class="contentscontainer">
+                            <div class="contents">
+                                <p class="linetext">現在の自分が<span class="atention anim">貢献できる能力、</span></p>
+                                <p class="linetext"><span class="atention item_text">WEB</span>を通して<span class="atention particletext fire">挑戦したい熱意。</span></p>
+                                <p class="linetext">その始まりの<span class="atention appear">きっかけとなった</span></p>
+                                <p class="linetext"><span class="atention appear02">マルタ共和国</span>での経験を伝えたい。</p>
+                                <p class="linetext">そんな思いで<span class="atention">制作しました。</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="linkbtn">
+                        <a href="../html/works.html" class="btn">
+                            View the works</a>
+                    </div>      
+            </section>
+            <section id="about-me" class="ripples">
+                    <div class="square">
+                        <h2-catch val="about me"></h2-catch>
+                        <span class="linebox02"></span>
+                        <p class="ritchtext">人の気持ち、想いの”本質”を伝えたい</p>
+                    </div>
+            <div id="circle">
+                <div class="backimg">
+                    <div class="maincontents">
+                            <div class="contentsleft">
+                                <h3 class="heading">{{ headings[0].intoroduce }}</h3>
+                                    <p class="intoroduce">マルタ共和国での留学でIT業界に踏み込むことを決意。<br/>
+                                        その後、システム開発会社に就職し<br/>Javaをメインとしたweb系のシステム開発業務に携る。<br/>
+                                        現在はフロントエンドエンジニア、デザイナーを目指し転職活動中。<br/>
+                                    </p>
+                            </div>
+                            <div class="contentsright">
+                                <h3 class="heading">{{ headings[1].skill }}</h3>
+                                <div class="skilllist">
+                                    <div class="skills">
+                                        <div class="skillname">HTML5/CSS</div>
+                                        <div class="progress-bar-1"></div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="skillname">JavaScript</div>
+                                        <div class="progress-bar-2"></div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="skillname">jQuery</div>
+                                        <div class="progress-bar-3"></div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="skillname">Vue.js</div>
+                                        <div class="progress-bar-4"></div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="skillname">Photoshop</div>
+                                        <div class="progress-bar-5"></div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="skillname">Illustrator</div>
+                                        <div class="progress-bar-6"></div>
+                                    </div>
+                                    <div class="skills">
+                                        <div class="skillname">Sketch</div>
+                                        <div class="progress-bar-7"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="linkbtn">
+                        <a href="../contact/contact.html" class="btn">Send a Messeage</a>
+                    </div>            
+            </section> 
+        </main>
+        <footer id="footer">
+            <div class="footer-box">
+                <div id="pagetop"><a href="#">Page Top</a></div>
+            </div>
+        </footer>
+</body>
+<script src="https://unpkg.com/vue@2.6.10"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../js/anime.min.js"></script>
+<script src="../js/jquery.ripples-min.js"></script>
+<script src="../js/jquery.lettering.js"></script>
+<script src="../js/component.js"></script>
+<script src="../js/top.js"></script>
+<script src="../js/common.js"></script>
+</html>
